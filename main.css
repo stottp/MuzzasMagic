@@ -13,6 +13,7 @@ body {
      -webkit-user-select: none;
      -ms-user-select: none;
      user-select: none;
+	 width: 100%;
 }
 
 .wrapper {
@@ -20,7 +21,7 @@ body {
   flex-direction:column;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 95%;
   padding: 25px 40px 40px; /* top, right and left, bottom */
   background: #eee;
   -moz-border-radius: 4px;
@@ -77,7 +78,7 @@ input[type=number] {
 	width: 100%;
 	padding: 12px 12px; /* top & bottom, right and left */
 	margin: 8px 0;
-	box-sizing: border-box;
+	box-sizing: border-box
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
 }
@@ -85,7 +86,7 @@ input[type=number] {
 input[type=radio] {
 	padding: 12px 50px; /* top & bottom, right and left */
 	margin: 8px 10px;
-	box-sizing: border-box;
+	box-sizing: border-box
 	font-family: 'Open Sans', sans-serif;
 }
 
