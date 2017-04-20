@@ -21,7 +21,6 @@ body {
   flex-direction:column;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
   padding: 25px 40px 40px; /* top, right and left, bottom */
   background: #eee;
   -moz-border-radius: 4px;
@@ -77,7 +76,8 @@ input[type=text],
 input[type=number] {
 	width: 100%;
 	padding: 12px 12px; /* top & bottom, right and left */
-	margin: 8px 0;
+	margin-left: auto;
+	margin-right: auto;
 	box-sizing: border-box
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
