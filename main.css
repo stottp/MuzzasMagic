@@ -20,8 +20,7 @@ body {
   flex-direction:column;
   margin-left: auto;
   margin-right: auto;
-  min-width: 300px;
-  max-width: 400px;
+  width: 300px;
   padding: 25px 40px 40px; /* top, right and left, bottom */
   background: #eee;
   -moz-border-radius: 4px;
@@ -67,9 +66,7 @@ p {
 	border-radius: 4px;
 }
 
-.main-form {
-	max-width: 900px;
-}
+
 
 ul {
 	list-style-type: none;
@@ -107,7 +104,7 @@ input[type=radio] + label {
 
 .btn-clear {
   background: #0AC986;
-  dispaly: inline-block;
+  display: inline-block;
   width: 100%;
   font-size: 16px;
   height: 50px;
@@ -131,6 +128,16 @@ input[type=radio] + label {
 
 .flex-outer > li:not(:last-child) {
   margin-bottom: 0.25em;
+}
+
+
+
+@media screen and (min-width: 520px) {
+	.wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 450px;
+	}
 }
 
 
