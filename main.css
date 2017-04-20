@@ -84,7 +84,7 @@ input[type=number] {
 }
 
 input[type=radio] {
-	padding: 12px 50px; /* top & bottom, right and left */
+	padding: 12px 20px; /* top & bottom, right and left */
 	margin: 8px 10px;
 	box-sizing: border-box
 	font-family: 'Open Sans', sans-serif;
@@ -138,6 +138,10 @@ input[type=radio] + label {
 		margin-left: auto;
 		margin-right: auto;
 		width: 450px;
+	}
+	
+	input[type=radio] {
+		padding: 12px 50px; /* top & bottom, right and left */
 	}
 }
 
