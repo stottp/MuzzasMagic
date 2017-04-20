@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Muzza's Magic Mystery Matrix</title>
+        <meta name="description" content="Muzza's Matrix">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+         <link rel="stylesheet" href="main.css?v=1.0">
+		 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+		
+    </head>
+    <body>
+		<div class="wrapper">
+			<h1>Muzza's Commission Calculator</h1>
+		<form class="main-form">
+			<ul class="flex-outer">
+				<li>
+					<label for="customer">
+						<p>Customer name: <input type="text" name="customer" class="customer-name" data-bind="value: customerName" placeholder="Enter registered company name" class="form-input" autofocus> </p>
+					</label>
+				</li>
+				
+				<li>
+					<label for="utilitySelection">
+						<p>Utility:</p>
+						<label class="rdo-lbl"><input type="radio" value="Electricity" data-bind="checked: radioSelectedOptionValue" />Electricity</label>
+						            <label class="rdo-lbl"><input type="radio" value="Natural Gas" data-bind="checked: radioSelectedOptionValue" />Natural Gas</label>
+					</label>
+				</li>
+				
+				<li>
+					<label for="consumption">
+						<p>Consumption kWh: <input type="number" name="consumption" class="utility-name" min="0" data-bind="value: customerAQ" placeholder="Enter the annual consumption in kWh"></p>
+					</label>
+				</li>
+				
+				<li>
+					<label for="supplies">
+						<p>Number of supplies: <input type="number" name="supplies" class="hashtag-name" min="0" value="0" data-bind="value: customerSupplies" placeholder="Enter the number of supplies"></p>
+					</label>
+				</li>
+				
+				<li>
+					<h3>Commission Structure</h3>
+					<p>Total Commission: £<span data-bind="text: totalCalculatedCommission"></span></p>
+					<p>Fixed Commission: <span data-bind="text: fixCommissionCheck"></span>  p/day</p>
+					<p>PPU Commission: <span data-bind="text: ppuCommissionCheck"></span> p/kWh</p>
+					<p>Consumption: <span data-bind="text: formattedConsumption"></span> kWh</p>
+				</li>
+				
+				<li>
+					<button class="btn-clear" data-bind="click: clearForm">Clear Form</button>
+				</li>
+		
+		</ul>
+	</form>
+</div>
+	
+		
+		
+		<script type="text/javascript" src="viewmodel.js"></script>
+	
+	
+	</body>
+</html>
+
+
